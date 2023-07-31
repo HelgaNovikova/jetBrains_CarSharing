@@ -25,7 +25,6 @@ public class MainMenu extends BaseMenu {
         items.add(new MenuItem("Log in as a manager", 1) {
             @Override
             public void run(Scanner sc) {
-                userContext.setManagerLogged(true);
                 new ManagerMenu(sc, userContext, companyRepo, customerRepo, carRepo);
                 showMenu(mainMenu);
             }

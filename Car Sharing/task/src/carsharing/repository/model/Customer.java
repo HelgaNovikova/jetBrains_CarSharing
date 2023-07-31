@@ -10,7 +10,6 @@ public class Customer {
         return id;
     }
 
-    private boolean isLogged;
 
     public Customer(String name) {
         this.name = name;
@@ -23,14 +22,6 @@ public class Customer {
     public Customer(int id, String name) {
         this.id = id;
         this.name = name;
-    }
-
-    public Car getRentedCar() {
-        return rentedCar;
-    }
-
-    public void setRentedCar(Car rentedCar) {
-        this.rentedCar = rentedCar;
     }
 
     public void setId(int id) {

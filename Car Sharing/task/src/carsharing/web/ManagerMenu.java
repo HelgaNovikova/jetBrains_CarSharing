@@ -53,7 +53,6 @@ public class ManagerMenu extends BaseMenu {
         items.add(new MenuItem("Back", 0) {
             @Override
             public void run(Scanner sc) {
-                userContext.setManagerLogged(false);
             }
         });
         managerMenuItems = buildMap(items);

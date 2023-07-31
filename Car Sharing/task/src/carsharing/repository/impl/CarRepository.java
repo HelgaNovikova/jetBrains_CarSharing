@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarRepository{
+public class CarRepository {
     private final Datasource ds;
 
     private static final String GET_ALL_CARS = "select * from CAR where company_id=";

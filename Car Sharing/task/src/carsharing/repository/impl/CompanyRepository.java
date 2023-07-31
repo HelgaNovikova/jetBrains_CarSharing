@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompanyRepository{
+public class CompanyRepository {
 
     private static final String GET_ALL_COMPANIES = "select * from COMPANY";
 

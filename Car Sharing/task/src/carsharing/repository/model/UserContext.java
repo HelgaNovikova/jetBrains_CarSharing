@@ -1,15 +1,10 @@
 package carsharing.repository.model;
 
 public class UserContext {
-    private boolean isManagerLogged;
 
     private Company company;
 
     private Customer customer;
-
-    public boolean isManagerLogged() {
-        return isManagerLogged;
-    }
 
     public Company getCompany() {
         return company;
@@ -36,11 +31,5 @@ public class UserContext {
     }
 
     private Car car;
-
-    public void setManagerLogged(boolean logged) {
-        isManagerLogged = logged;
-    }
-
-
 
 }

@@ -3,7 +3,6 @@ package carsharing.web;
 import carsharing.repository.impl.CarRepository;
 import carsharing.repository.impl.CompanyRepository;
 import carsharing.repository.impl.CustomerRepository;
-import carsharing.repository.model.Company;
 import carsharing.repository.model.Customer;
 import carsharing.repository.model.UserContext;
 
@@ -41,7 +40,6 @@ public class ChooseCustomerMenu extends BaseMenu {
         items.add(new MenuItem("Back", 0) {
             @Override
             public void run(Scanner sc) {
-                //TODO add smth
             }
         });
 

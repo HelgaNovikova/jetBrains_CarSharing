@@ -6,7 +6,7 @@ import carsharing.repository.model.Company;
 
 import java.util.*;
 
-public class ManageCarsMenu extends BaseMenu{
+public class ManageCarsMenu extends BaseMenu {
     private Map<Integer, MenuItem> carsMenu = new LinkedHashMap<>();
 
     public ManageCarsMenu(CarRepository carRepo, Company company, Scanner sc) {
@@ -39,7 +39,7 @@ public class ManageCarsMenu extends BaseMenu{
                 System.out.println("Enter the car name:");
                 sc.nextLine();
                 String name = sc.nextLine();
-                carRepo.createCar(new Car(name,company));
+                carRepo.createCar(new Car(name, company));
                 System.out.println("The car was added!");
                 System.out.println();
                 showMenu(carsMenu);

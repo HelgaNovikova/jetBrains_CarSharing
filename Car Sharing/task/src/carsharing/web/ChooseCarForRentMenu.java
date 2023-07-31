@@ -33,7 +33,6 @@ public class ChooseCarForRentMenu extends BaseMenu {
                 public void run(Scanner sc) {
                     customerRepo.rentCar(userContext.getCustomer(), car);
                     System.out.println("You rented '" + car.getName() + "'");
-                   // showMenu(carsForRentMenu);
                 }
             });
         }

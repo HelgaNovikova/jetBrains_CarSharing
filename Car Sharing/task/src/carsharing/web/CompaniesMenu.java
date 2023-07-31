@@ -42,7 +42,6 @@ public class CompaniesMenu extends BaseMenu {
                                     company.getName() + "' company");
                             showMenu(companiesMenu);
                         }
-//                        showMenu(companiesMenu);
                     } else {
                         System.out.println("'" + company.getName() + "' company");
                         new ManageCarsMenu(carRepo, company, sc);

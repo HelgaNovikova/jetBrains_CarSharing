@@ -15,12 +15,6 @@ public class DatabaseInitializer {
                 "NAME VARCHAR(255) not NULL, " +
                 "PRIMARY KEY (ID)," +
                 "UNIQUE KEY name (NAME))";
-        String dropTableCompany = "DROP TABLE IF EXISTS COMPANY";
-        String dropTableCar = "DROP TABLE IF EXISTS CAR";
-        String dropTableCustomer = "DROP TABLE IF EXISTS CUSTOMER";
-//        stmt.executeUpdate(dropTableCustomer);
-//        stmt.executeUpdate(dropTableCar);
-//        stmt.executeUpdate(dropTableCompany);
         stmt.executeUpdate(createTableCompany);
         String createTableCar = "CREATE TABLE if not exists CAR " +
                 "(ID INT NOT NULL AUTO_INCREMENT, " +
